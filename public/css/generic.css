@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'PP Supply Sans';
+    src: url('fonts/PPSupplySans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'BaikalVAR';
+    src: url('fonts/BaikalVAR-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1 {
+    font-size: 40px;
+    color:#4041F6 ;
+    font-family: 'PP Supply Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'BaikalVAR', Arial, Helvetica, sans-serif;
+}
+
+a {
+    display: flex;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'BaikalVAR', Arial, Helvetica, sans-serif;
+    background-color: #4041F6;
+    text-decoration: none;
+}

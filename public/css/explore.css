@@ -1,0 +1,18 @@
+.explore {
+    margin-top: 50px;
+    width: 260%;
+    height: 500px;
+}
+
+.explore a {
+    display: inline;
+    color: #000;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.menu-explore {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px solid #000;
+}
