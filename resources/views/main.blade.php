@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav class="header">
             <div class="menu">
                 <img src="{{ asset('icons/logo.svg') }}" alt="logo">
                 <img src="{{ asset('icons/menu.svg') }}" alt="logo">
@@ -28,38 +28,58 @@
     </section>
 
     <section class="explore">
-        <div class="menu-explore">
-            <a href="#">Shoe pattern making and production</a>
-            <a href="#">3D Shoe modeling</a>
-            <a href="#">2D/3D integrated shoe creation</a>
-            <a href="#">Last and insole design</a>
-        </div>
+        <nav class="menu-explore">
+            <div class="explore-container">
+            <ul>
+                <li><a class="making-production" href="#ESP">Shoe pattern making and production</a></li>
+                <li><a class="shoe-modeling" href="#ESP">3D Shoe modeling</a></li>
+                <li><a class="shoe-creation" href="#ESP">2D/3D integrated shoe creation</a></li>
+                <li><a class="insole-design" href="#ESP">Last and insole design</a></li>
+            </ul>
+            </div>
+        </nav>
+    <div class="main-container-explore">
+        <div class="container-explore">
         <div class="icad-discovery">
             <div class="background-img">
-                <img src="{{ asset('images/zpt-explore-1.png') }} " alt="logo">
+                <img width="290px" src="{{ asset('images/zpt-explore-1.png') }} " alt="logo">
             </div>
-            <img src="{{ asset('icons/icad-discovery.svg') }}" alt="logo">
+            <img class="logo-container" src="{{ asset('icons/icad-discovery.svg') }}" alt="logo">
             <p>Software solution for technical footwear design and pattern making.</p>
+            <div class="a-discovery">
             <a class="explore-a" href="#">Explore it</a>
+            <img src="{{ asset('icons/logo-plus.svg') }}" alt="logo">
+            </div>
         </div>
 
-        <div class="icad-nest-production">
+        <div class="icad-discovery">
             <div class="background-img">
                 <img src="{{ asset('images/zpt-explore-2.png') }}" alt="logo">
             </div>
-            <img src="{{ asset('icons/icad-nest-production.svg') }} " alt="logo">
+            <img class="logo-container" src="{{ asset('icons/icad-nest-production.svg') }}" alt="logo">
             <p>Software for automatized and optimized shoe cutting production.</p>
-            <a class="explore-a" href="#">Explore Icad Nest</a>
+            <div class="a-discovery">
+                <a class="explore-a" href="#">Explore Icad Nest</a>
+                <img src="{{ asset('icons/logo-plus.svg') }}" alt="logo">
+            </div>
         </div>
 
-        <div class="icad-last">
+        <div class="icad-discovery">
             <div class="background-img">
                 <img src="{{ asset('images/zpt-explore-3.png') }}" alt="logo">
             </div>
-            <img src="{{ asset('icons/icad-last.svg') }}" alt="logo">
+            <img class="logo-container" src="{{ asset('icons/icad-last.svg') }}" alt="logo">
             <p>Specialized software for shoe last designing.</p>
-            <a class="explore-a" href="#">Explore Icad Last</a>
+            <div class="a-discovery">
+                <a class="explore-a" href="#">Explore Icad Last</a>
+                <img src="{{ asset('icons/logo-plus.svg') }}" alt="logo">
+            </div>
         </div>
+        </div>
+    </div>
     </section>
+
+<script src="{{ asset('js/script.js') }}"></script>
+    
 </body>
 </html>
