@@ -11,12 +11,36 @@
 </head>
 <body>
     <header>
-        <nav class="header">
             <div class="menu">
                 <img src="{{ asset('icons/logo.svg') }}" alt="logo">
-                <img src="{{ asset('icons/menu.svg') }}" alt="logo">
+                <img class="open-menu" src="{{ asset('icons/menu.svg') }}" alt="logo">
+                <img class="close-menu" src="{{ asset('icons/close.svg') }}" alt="logo">
             </div>
-        </nav>
+            <div class="container-header">
+                <nav class="menu-header">
+                    <ul>
+                        <div id="menu-products" class="menu-content">
+                        <a class="products-section" href="#">Products</a>
+                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        </div>
+                        <div class="dropdown-products">
+                            <a href="#">Shoe pattern making and production</a>
+                            <a href="#">3D Shoe modeling</a>
+                            <a href="#">2D/3D Integrated shoe design</a>
+                            <a href="#">Last and insole design</a>
+                        </div>
+                        <div class="menu-content">
+                        <a href="#">Plans</a>
+                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        </div>
+                        <div class="menu-content">
+                        <a href="#">Learn & explore</a>
+                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        </div>
+                        <a href="#">Support</a>
+                    </ul>
+                </nav>
+                <a class="contact" href="#">Contact now</a>
     </header>
 
     <section class="cabecera">
@@ -42,7 +66,7 @@
         <div class="container-explore">
         <div class="icad-discovery">
             <div class="background-img">
-                <img width="290px" src="{{ asset('images/zpt-explore-1.png') }} " alt="logo">
+                <img width="300px" src="{{ asset('images/zpt-explore-1.png') }} " alt="logo">
             </div>
             <img class="logo-container" src="{{ asset('icons/icad-discovery.svg') }}" alt="logo">
             <p>Software solution for technical footwear design and pattern making.</p>
@@ -54,7 +78,7 @@
 
         <div class="icad-discovery">
             <div class="background-img">
-                <img src="{{ asset('images/zpt-explore-2.png') }}" alt="logo">
+                <img width="310px" src="{{ asset('images/zpt-explore-2.png') }}" alt="logo">
             </div>
             <img class="logo-container" src="{{ asset('icons/icad-nest-production.svg') }}" alt="logo">
             <p>Software for automatized and optimized shoe cutting production.</p>
@@ -66,7 +90,7 @@
 
         <div class="icad-discovery">
             <div class="background-img">
-                <img src="{{ asset('images/zpt-explore-3.png') }}" alt="logo">
+                <img width="300px" src="{{ asset('images/zpt-explore-3.png') }}" alt="logo">
             </div>
             <img class="logo-container" src="{{ asset('icons/icad-last.svg') }}" alt="logo">
             <p>Specialized software for shoe last designing.</p>
