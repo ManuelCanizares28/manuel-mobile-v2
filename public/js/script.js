@@ -40,23 +40,56 @@ function functionMenu () {
     const openMenu = document.querySelector('.open-menu');
     const closeMenu = document.querySelector('.close-menu');
     const menuContent = document.querySelector('.container-header');
-    const dropMenu = document.querySelector('.dropdown-products');
+    const dropProducts = document.querySelector('.dropdown-products');
     const openProducts = document.getElementById('menu-products');
+    const iconoChevron = document.querySelector('.chevron-down');
+    const openPlans = document.getElementById('menu-plans');
+    const dropPlans = document.querySelector('.dropdown-plans');
+    const iconoPlans = document.querySelector('.chevron-down-plans');
+    const openExplore = document.getElementById('menu-explore');
+    const dropExplore = document.querySelector('.dropdown-explore');
+    const iconoExplore = document.querySelector('.chevron-down-explore');
 
     openMenu.addEventListener('click', function() {
-        menuContent.style.display = 'block';
+        menuContent.classList.toggle('show-container');
         openMenu.style.display = 'none';
-        closeMenu.style.display = 'block';
+        closeMenu.classList.toggle('show-icons');
     });
 
     closeMenu.addEventListener('click', function() {
-        menuContent.style.display = 'none';
+        closeMenu.classList.remove('show-icons');
         openMenu.style.display = 'block';
-        closeMenu.style.display = 'none';
+        menuContent.classList.remove('show-container');
     });
 
     openProducts.addEventListener('click', function() {
-        dropMenu.style.display = 'block';
+        if (dropProducts.style.display === 'block') {
+            dropProducts.style.display = 'none';
+        } else {
+            dropProducts.style.display = 'block';
+        }
+
+        iconoChevron.classList.toggle('rotate-up-products');
+    });
+
+    openPlans.addEventListener('click', function() {
+        if (dropPlans.style.display === 'block') {
+            dropPlans.style.display = 'none';
+        } else {
+            dropPlans.style.display = 'block';
+        }
+
+        iconoPlans.classList.toggle('rotate-up-plans');
+    });
+
+    openExplore.addEventListener('click', function() {
+        if(dropExplore.style.display === 'block') {
+            dropExplore.style.display = 'none';
+        } else {
+            dropExplore.style.display = 'block';
+        }
+
+        iconoExplore.classList.toggle('rotate-up-explore');
     });
 };
 

@@ -21,21 +21,38 @@
                     <ul>
                         <div id="menu-products" class="menu-content">
                         <a class="products-section" href="#">Products</a>
-                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        <img class="chevron-down" src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
                         </div>
                         <div class="dropdown-products">
                             <a href="#">Shoe pattern making and production</a>
                             <a href="#">3D Shoe modeling</a>
+                            <div class="shoe-design">
                             <a href="#">2D/3D Integrated shoe design</a>
+                            <img src="{{ asset('icons/close.svg') }}" alt="logo">
+                            </div>
+                            <div class="icad-evolve">
+                                <img src="{{ asset('icons/icad-evolve.svg') }}" alt="logo">
+                                <a href="#">Software</a>
+                                <p>The first end-to-end software for footwear creation in an integrated and collaborative 2D/3D space.</p>
+                            </div>
                             <a href="#">Last and insole design</a>
                         </div>
-                        <div class="menu-content">
+                        <div id="menu-plans" class="menu-content">
                         <a href="#">Plans</a>
-                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        <img class="chevron-down-plans" src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
                         </div>
-                        <div class="menu-content">
+                        <div class="dropdown-plans">
+                            <a href="#">Icad for business</a>
+                            <a href="#">Icad for education centers</a>
+                            <a href="#">View all plans</a>
+                        </div>
+                        <div id="menu-explore" class="menu-content">
                         <a href="#">Learn & explore</a>
-                        <img src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        <img class="chevron-down-explore" src="{{ asset('icons/chevron-down.svg') }}" alt="logo">
+                        </div>
+                        <div class="dropdown-explore">
+                            <a href="#">Icad for business</a>
+                            <a href="#">Icad for education centers</a>
                         </div>
                         <a href="#">Support</a>
                     </ul>
