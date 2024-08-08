@@ -49,6 +49,8 @@ function functionMenu () {
     const openExplore = document.getElementById('menu-explore');
     const dropExplore = document.querySelector('.dropdown-explore');
     const iconoExplore = document.querySelector('.chevron-down-explore');
+    const designShoe = document.querySelector('.shoe-design-a');
+    const closeDesign = document.querySelector('.close-design');
 
     openMenu.addEventListener('click', function() {
         menuContent.classList.toggle('show-container');
@@ -90,6 +92,16 @@ function functionMenu () {
         }
 
         iconoExplore.classList.toggle('rotate-up-explore');
+    });
+
+    designShoe.addEventListener('click', function() {
+        designShoe.classList.add('hover');
+        closeDesign.style.display = 'block';
+    });
+
+    closeDesign.addEventListener('click', function() {
+        designShoe.classList.remove('hover');
+        closeDesign.style.display = 'none';
     });
 };
 

@@ -1,0 +1,26 @@
+.shoe-design {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover{
+    background-color: #F1F1FE;
+    color: #000;
+    height: 20px;
+    padding: 15px;
+    width: 90%;
+}
+
+.shoe-design img {
+    display: none;
+    position: absolute;
+    top: 410%;
+    left: 80%;
+}
+
+.dropdown-design {
+    overflow: auto;
+    margin-top: 20px;
+    width: 98%;
+    border-top: 3px solid #F1F1FE;
+}
