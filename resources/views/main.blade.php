@@ -32,41 +32,42 @@
                             <img class="close-design" width="12px" src="{{ asset('icons/close.svg') }}" alt="logo">
                             </div>
                             <div class="dropdown-design">
-                                <div class="icad-evolve">
-                                    <img src="{{ asset('icons/icad-evolve.svg') }}" alt="logo">
+                                <div class="design-container">
+                                    <img width="80px" src="{{ asset('icons/icad-evolve.svg') }}" alt="logo">
                                     <a href="#">SOFTWARE</a>
                                     <p>The first end-to-end software for footwear creation in an integrated and collaborative 2D/3D space.</p>
                                 </div>
 
-                                <div class="icad-workspace">
-                                    <img src="{{ asset('icons/icad-workspace.svg') }}" alt="logo">
+                                <div class="design-container">
+                                    <img width="110px" src="{{ asset('icons/icad-workspace.svg') }}" alt="logo">
                                     <a href="#">CLOUD PLATFORM</a>
                                     <p>A collaborative cloud platform to share and manage your team's shoes, materials, lasts and outsoles models.</p>
                                 </div>
 
-                                <div class="icad-colorways">
-                                    <img src="{{ asset('icons/icad-colorways.svg') }}" alt="logo">
+                                <div class="design-container">
+                                    <img width="120px" src="{{ asset('icons/icad-colorways.svg') }}" alt="logo">
                                     <a href="#">CLOUD PLATFORM</a>
                                     <p>Cloud platform to create customized models integrated into websites and e-commerce systems</p>
                                 </div>
 
-                                <div class="icad-last">
-                                    <img src="{{ asset('icons/icad-last.svg') }}" alt="logo">
+                                <div class="design-container">
+                                    <img width="70px" src="{{ asset('icons/icad-last.svg') }}" alt="logo">
                                     <a href="#">SOFTWARE</a>
                                     <p>Specialized software for shoe last designing</p>
                                 </div>
 
-                                <div class="plugin">
+                                <div class="plugin-container">
                                     <a href="#">PLUGIN</a>
                                     <p>Plugin for Rhinoceros to design bottom shoe parts.</p>
                                 </div>
 
-                                <div class="icad-materials-scan">
-                                    <img src="{{ asset('icons/icad-materials.svg') }}" alt="logo">
+                                <div class="design-container">
+                                    <img width="140px" src="{{ asset('icons/icad-materials.svg') }}" alt="logo">
                                     <a href="#">HARDWARE</a>
                                     <p>Ultra high-definition materials scanner to scan any material for footwear 3d models.</p>
                                 </div>
                             </div>
+                            <a class="insole-products" href="#">Last and insole design</a>
                         </div>
                         <div id="menu-plans" class="menu-content">
                         <a class="a-header" href="#">Plans</a>
@@ -94,7 +95,7 @@
     <section class="cabecera">
         <h1>REVOLUTIONIZE YOUR FOOTWEAR CREATION PROCESSES</h1>
         <p>Our solutions are the industry's future. A more sustainable, efficient, innovative and simply superior way of creating and producing shoes.</p>
-        <a href="#">About Icad</a>
+        <a class="about-cabecera" href="#">About Icad</a>
         <img width="312px" src="{{ asset('images/zpt-cabecera.png') }}" alt="logo">
         <div class="triangulo"></div>
     </section>

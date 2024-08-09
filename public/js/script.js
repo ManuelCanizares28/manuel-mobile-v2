@@ -51,6 +51,7 @@ function functionMenu () {
     const iconoExplore = document.querySelector('.chevron-down-explore');
     const designShoe = document.querySelector('.shoe-design-a');
     const closeDesign = document.querySelector('.close-design');
+    const dropDesign = document.querySelector('.dropdown-design');
 
     openMenu.addEventListener('click', function() {
         menuContent.classList.toggle('show-container');
@@ -95,11 +96,24 @@ function functionMenu () {
     });
 
     designShoe.addEventListener('click', function() {
-        designShoe.classList.add('hover');
-        closeDesign.style.display = 'block';
+        if(dropDesign.style.display === 'block') {
+            dropDesign.style.display = 'none';
+        } else {
+            dropDesign.style.display = 'block';
+        }
+    });
+
+    designShoe.addEventListener('click', function() {
+        designShoe.classList.toggle('hover');
+        if(closeDesign.style.display === 'block') {
+            closeDesign.style.display = 'none';
+        } else {
+            closeDesign.style.display = 'block';
+        }
     });
 
     closeDesign.addEventListener('click', function() {
+        dropDesign.style.display = 'none';
         designShoe.classList.remove('hover');
         closeDesign.style.display = 'none';
     });

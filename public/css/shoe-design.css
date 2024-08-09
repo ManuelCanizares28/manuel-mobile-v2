@@ -13,14 +13,77 @@
 
 .shoe-design img {
     display: none;
-    position: absolute;
-    top: 410%;
-    left: 80%;
+    position: relative;
+    right: 30px;
 }
 
 .dropdown-design {
+    display: none;
     overflow: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 98%;
     border-top: 3px solid #F1F1FE;
+    border-bottom: 3px solid #F1F1FE;
+}
+
+.design-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+}
+
+.design-container:hover {
+    background-color: #F1F1FE;
+}
+
+.design-container img {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.design-container a {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #F1F1FE;
+    width: 100px;
+    font-family: 'PP Supply Sans', Arial, Helvetica, sans-serif;
+    color: #4041F6;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.design-container p {
+    font-size: 14px;
+    margin: 15px;
+}
+
+.plugin-container {
+    padding-top: 1px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.plugin-container:hover {
+    background-color: #F1F1FE;
+}
+
+.plugin-container a{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #F1F1FE;
+    width: 100px;
+    font-family: 'PP Supply Sans', Arial, Helvetica, sans-serif;
+    color: #4041F6;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.plugin-container p {
+    font-size: 14px;
+    margin: 15px;
 }
